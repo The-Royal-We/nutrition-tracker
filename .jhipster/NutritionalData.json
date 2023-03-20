@@ -1,0 +1,59 @@
+{
+  "applications": ["nutritionTracker"],
+  "changelogDate": "20230320130305",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "nutritional_data",
+  "fields": [
+    {
+      "fieldName": "weight",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "steps",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sleep",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "water",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "protein",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "carbs",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "fat",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "calories",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "NutritionalData",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "nutritionalWeek",
+      "otherEntityRelationshipName": "nutritionalData",
+      "relationshipName": "nutritionalWeek",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

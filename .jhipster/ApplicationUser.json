@@ -1,0 +1,27 @@
+{
+  "applications": ["nutritionTracker"],
+  "changelogDate": "20230320130505",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "application_user",
+  "fields": [
+    {
+      "fieldName": "someData",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ApplicationUser",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "ownerSide": true,
+      "relationshipName": "internalUser",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

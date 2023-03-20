@@ -1,0 +1,35 @@
+{
+  "applications": ["nutritionTracker"],
+  "changelogDate": "20230320130405",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "nutritional_week",
+  "fields": [
+    {
+      "fieldName": "dateFrom",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dateTo",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "NutritionalWeek",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "nutritionalData",
+      "otherEntityRelationshipName": "nutritionalWeek",
+      "relationshipName": "nutritionalData",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

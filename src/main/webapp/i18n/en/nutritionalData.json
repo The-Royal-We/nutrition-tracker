@@ -1,0 +1,33 @@
+{
+  "nutritionTrackerApp": {
+    "nutritionalData": {
+      "home": {
+        "title": "Nutritional Data",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Nutritional Data",
+        "createOrEditLabel": "Create or edit a Nutritional Data",
+        "notFound": "No Nutritional Data found"
+      },
+      "created": "A new Nutritional Data is created with identifier {{ param }}",
+      "updated": "A Nutritional Data is updated with identifier {{ param }}",
+      "deleted": "A Nutritional Data is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Nutritional Data {{ id }}?"
+      },
+      "detail": {
+        "title": "Nutritional Data"
+      },
+      "id": "ID",
+      "weight": "Weight",
+      "steps": "Steps",
+      "sleep": "Sleep",
+      "water": "Water",
+      "protein": "Protein",
+      "carbs": "Carbs",
+      "fat": "Fat",
+      "calories": "Calories",
+      "date": "Date",
+      "nutritionalWeek": "Nutritional Week"
+    }
+  }
+}
