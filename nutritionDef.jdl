@@ -1,0 +1,38 @@
+
+application {
+  config {
+    baseName nutritionTracker,
+    applicationType monolith,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework react
+  }
+  entities *
+}
+
+entity NutritionalData {
+  weight Double,
+    steps Integer,
+    sleep Double,
+    water Double,
+    protein Double,
+    carbs Double,
+    fat Double,
+    calories Integer
+    date LocalDate
+}
+entity NutritionalWeek {
+  dateFrom LocalDate
+    dateTo LocalDate
+    name String
+}
+entity ApplicationUser {
+  someData String
+}
+relationship ManyToOne {
+  NutritionalData{nutritionalWeek} to NutritionalWeek{nutritionalData}
+}
+relationship OneToOne {
+  ApplicationUser{internalUser} to User
+}
